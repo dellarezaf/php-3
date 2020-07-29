@@ -1,6 +1,12 @@
 <?php
 function ubah_huruf($string){
-//kode di sini
+  $string_geser = '';
+  for($i=0;$i<strlen($string);$i++){
+    $ascii = ord($string[$i]);
+    $geser_karakter = chr($ascii+1);
+    $string_geser .= $geser_karakter;
+  }
+  return $string_geser . "<br>";
 }
 
 // TEST CASES
