@@ -5,7 +5,6 @@ function cari_mean($arr){
   for($i=0;$i<count($arr);$i++){
     $sum+=$arr[$i];
   }
-
   return round($sum/count($arr));
 }
 
